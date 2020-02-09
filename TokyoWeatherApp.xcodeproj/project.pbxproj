@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		03A5AA2223F04A9D00C1EBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5AA2023F04A9D00C1EBCB /* Main.storyboard */; };
 		03A5AA2423F04A9F00C1EBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A5AA2323F04A9F00C1EBCB /* Assets.xcassets */; };
 		03A5AA2723F04A9F00C1EBCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5AA2523F04A9F00C1EBCB /* LaunchScreen.storyboard */; };
+		03A5AA2F23F04D6200C1EBCB /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5AA2E23F04D6200C1EBCB /* WeatherDetailsView.swift */; };
+		03A5AA3123F056BD00C1EBCB /* TokyoWeather.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A5AA3023F056BD00C1EBCB /* TokyoWeather.png */; };
+		F7F7DBF05E33341E157A5460 /* Pods_TokyoWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5864499CAA6A43A3DFFEF9D /* Pods_TokyoWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		03A5AA2323F04A9F00C1EBCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03A5AA2623F04A9F00C1EBCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03A5AA2823F04A9F00C1EBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A5AA2E23F04D6200C1EBCB /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
+		03A5AA3023F056BD00C1EBCB /* TokyoWeather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TokyoWeather.png; sourceTree = "<group>"; };
+		136DA630749A738D492F1B09 /* Pods-TokyoWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-TokyoWeatherApp/Pods-TokyoWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		7DC704CE06A59594CFA79694 /* Pods-TokyoWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-TokyoWeatherApp/Pods-TokyoWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C5864499CAA6A43A3DFFEF9D /* Pods_TokyoWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokyoWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F7DBF05E33341E157A5460 /* Pods_TokyoWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				03A5AA1B23F04A9D00C1EBCB /* TokyoWeatherApp */,
 				03A5AA1A23F04A9D00C1EBCB /* Products */,
+				8DD0F024CBD139341BFDBB7F /* Pods */,
+				C5E64136BCE61350922254D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,31 @@
 			children = (
 				03A5AA1C23F04A9D00C1EBCB /* AppDelegate.swift */,
 				03A5AA1E23F04A9D00C1EBCB /* ViewController.swift */,
+				03A5AA2E23F04D6200C1EBCB /* WeatherDetailsView.swift */,
 				03A5AA2023F04A9D00C1EBCB /* Main.storyboard */,
 				03A5AA2323F04A9F00C1EBCB /* Assets.xcassets */,
 				03A5AA2523F04A9F00C1EBCB /* LaunchScreen.storyboard */,
+				03A5AA3023F056BD00C1EBCB /* TokyoWeather.png */,
 				03A5AA2823F04A9F00C1EBCB /* Info.plist */,
 			);
 			path = TokyoWeatherApp;
+			sourceTree = "<group>";
+		};
+		8DD0F024CBD139341BFDBB7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DC704CE06A59594CFA79694 /* Pods-TokyoWeatherApp.debug.xcconfig */,
+				136DA630749A738D492F1B09 /* Pods-TokyoWeatherApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5E64136BCE61350922254D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5864499CAA6A43A3DFFEF9D /* Pods_TokyoWeatherApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A5AA2B23F04A9F00C1EBCB /* Build configuration list for PBXNativeTarget "TokyoWeatherApp" */;
 			buildPhases = (
+				14CDA0B3C3EFFA3597D3B929 /* [CP] Check Pods Manifest.lock */,
 				03A5AA1523F04A9D00C1EBCB /* Sources */,
 				03A5AA1623F04A9D00C1EBCB /* Frameworks */,
 				03A5AA1723F04A9D00C1EBCB /* Resources */,
+				E12F08CCFEAC90DD0029DCBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A5AA2723F04A9F00C1EBCB /* LaunchScreen.storyboard in Resources */,
+				03A5AA3123F056BD00C1EBCB /* TokyoWeather.png in Resources */,
 				03A5AA2423F04A9F00C1EBCB /* Assets.xcassets in Resources */,
 				03A5AA2223F04A9D00C1EBCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14CDA0B3C3EFFA3597D3B929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TokyoWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12F08CCFEAC90DD0029DCBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TokyoWeatherApp/Pods-TokyoWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TokyoWeatherApp/Pods-TokyoWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TokyoWeatherApp/Pods-TokyoWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03A5AA1523F04A9D00C1EBCB /* Sources */ = {
@@ -137,6 +212,7 @@
 			files = (
 				03A5AA1F23F04A9D00C1EBCB /* ViewController.swift in Sources */,
 				03A5AA1D23F04A9D00C1EBCB /* AppDelegate.swift in Sources */,
+				03A5AA2F23F04D6200C1EBCB /* WeatherDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +356,7 @@
 		};
 		03A5AA2C23F04A9F00C1EBCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC704CE06A59594CFA79694 /* Pods-TokyoWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shu.ito.TokyoWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		03A5AA2D23F04A9F00C1EBCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136DA630749A738D492F1B09 /* Pods-TokyoWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shu.ito.TokyoWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
